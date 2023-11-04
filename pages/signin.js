@@ -144,7 +144,7 @@ export default function Signin({ providers, callbackUrl, csrfToken }) {
               {(form) => ( 
                 <Form method="post" action="/api/auth/signin/email">
                   <input 
-                  type="hidden" 
+                    type="hidden" 
                     name="csrfToken"
                     defaultValue={csrfToken}
                   />
@@ -155,11 +155,11 @@ export default function Signin({ providers, callbackUrl, csrfToken }) {
                     placeholder="Email Address" 
                     onChange={handleChange}
                   />
-                  <LoginInput 
+                  <LoginInput
                     type="password"
                     name="login_password"
-                    icon="password" 
-                    placeholder="Password" 
+                    icon="password"
+                    placeholder="Password"
                     onChange={handleChange}
                   />
                   <CircleIconBtn type="submit" text="Sign in"/>
@@ -171,7 +171,6 @@ export default function Signin({ providers, callbackUrl, csrfToken }) {
                   </div>
                 </Form>
               )}
-              
             </Formik>
             <div className={styles.login__socials}>
               <span className={styles.or}>Or continue with</span>
