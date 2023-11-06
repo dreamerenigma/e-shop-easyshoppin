@@ -30,6 +30,20 @@
       font-weight: 500;
     }
   }
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #6666669a;
+    transition: color 0.3s;
+  }
 }
 .error {
   background: $light-error-color;

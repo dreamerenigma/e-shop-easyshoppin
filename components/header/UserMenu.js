@@ -5,7 +5,7 @@ import { signOut, signIn } from 'next-auth/react';
 export default function UserMenu({ session }) {
    return (
       <div className={styles.menu}>
-         <h4>Welcome to Shoppin 🙋🏼‍♂️!</h4>
+         <h4>Welcome to Easy Shoppin 🙋🏼‍♂️!</h4>
          {session ? (
             <div className={styles.flex}>
                <img src={session.user.image} alt='' className={styles.menu__img} />

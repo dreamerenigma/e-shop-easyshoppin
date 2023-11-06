@@ -12,10 +12,10 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <>
       <Head>
-        <title>Shoppin</title>
+        <title>Easy Shoppin</title>
         <meta
           name="description"
-          content="Shoppin - online shopping service for all of your needs."
+          content="Easy Shoppin - online shopping service for all of your needs."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

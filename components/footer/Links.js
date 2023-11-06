@@ -19,7 +19,7 @@ export default function Links() {
 }
 const links = [
   {
-    heading: "SHOPPIN",
+    heading: "EASY SHOPPIN",
     links: [
       {
         name: "About us",
