@@ -10,7 +10,6 @@ const nextConfig = {
       includepaths: [path.join(__dirname, 'styles')],
       prependData: `@import './styles/base.scss';`,
    },
-   assetPrefix: 'http://hitmanmf.beget.tech', 
 };
 
 module.exports = nextConfig
