@@ -147,5 +147,20 @@
         }
       }
     }
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  button {
+    display: flex;
+    align-items: center;
+    gap: 4px; 
+    font-size: 14px; 
+    color: #fff; 
+    cursor: pointer;
+  }
+  button span {
+    vertical-align: middle;
   }
 }
