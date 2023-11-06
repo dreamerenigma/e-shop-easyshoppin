@@ -1,5 +1,6 @@
 $blue-color:#2f82ff;
 $yellow-color: #fac80f;
+$orange-color: #ef670f;
 $violet-color: #5a31f4;
 $redish-color: #f15f6f;
 $grey-color:#f8f8f8;
@@ -85,6 +86,7 @@ $shadow-2:rgba(99, 99, 99, 0.1) 0px 0px 4px 0px;
 }
 .mainSwiper,
 .user__swiper,
+.flashDeals__swiper,
 .offers_swiper {
   .swiper {
     border-radius: 10px !important;
@@ -211,5 +213,23 @@ $shadow-2:rgba(99, 99, 99, 0.1) 0px 0px 4px 0px;
       height: 240px !important;
     }
   } 
+}
+.flashDeals__swiper {
+  .swiper-slide {
+    img {
+      border-radius: 0 !important;
+      height: 320px !important;
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 35%;
+  }
+  @media (max-width: 450px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: grid !important;
+    }
+  }
 }
 /*-------------End------------*/
