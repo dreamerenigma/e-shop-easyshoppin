@@ -12,7 +12,6 @@ const defaultRemainingTime = {
 export default function CountDown({ date }) {
   const [timeInMs, setTimeInMs] = useState(date.getTime());
   const [remainingTime, setRemainingTime] = useState();
-  console.log("remaining", remainingTime);
   useEffect(() => {
     setTimeInMs(date.getTime());
   }, [date]);

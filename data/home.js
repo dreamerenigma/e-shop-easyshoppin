@@ -58,7 +58,7 @@ export const offersArray = [
       "https://i.ibb.co/ySvjz7J/681200703-D-1.webp",
     price: "7000",
     discount: "28",
-  },
+  }
 ];
 
 export const menuArray = [
@@ -265,7 +265,7 @@ export const menuArray = [
     ],
     brands: [],
     images: [],
-  },
+  }
 ];
 
 export const userSwiperArray = [
@@ -303,7 +303,7 @@ export const userSwiperArray = [
     image:
       "https://i.ibb.co/8b8hqj8/Ad9d8604794234179bcde494a86fc41dcp-jpeg-640x640.webp",
     link: "",
-  },
+  }
 ];
 
 export const flashDealsArray = [
@@ -386,119 +386,104 @@ export const flashDealsArray = [
     link: "",
     discount: "28",
     sold: "23",
-  },
+  }
 ];
 
 export const women_dresses = [
   {
     image:
-      "https://i.ibb.co/8NxYsxR/Sb0ff958acce846e1a9b00dc7d6b8efa1-H.webp",
+      "https://i.ibb.co/QYW190D/S3716003544004c89805f636349f69c36d-jpg-640x640.webp",
     price: "3400",
   },
   {
     image:
-      "https://i.ibb.co/RD8vv2y/Sdc43dffcea8144238c11dd775c3130b11.webp",
+      "https://i.ibb.co/KzCnpsp/H8486e9884a26409e88fb0b9dd2ef3c641-jpg-640x640.webp",
     price: "3400",
   },
   {
     image:
-      "https://i.ibb.co/Bckz7sv/S6d600699d6174bcdb9b2bd6bfb98511cj.webp",
+      "https://i.ibb.co/gyCrs1r/H8e2890c08da34e1e9f83ed93be602166p-jpg-640x640.webp",
     price: "3400",
   },
   {
     image:
-      "https://i.ibb.co/k3F33ss/Sea219ce2d4124684a80c3a56bb0b399dh-jpg-640x640.webp",
+      "https://i.ibb.co/0hpyTgW/S4e214dd25bd74fe6b60e62f750cfc3cao-jpg-640x640.webp",
     price: "3400",
   },
   {
     image:
-      "https://i.ibb.co/MfXn8NG/S771583054af442438f5b206ca749dbf4-E.webp",
+      "https://i.ibb.co/T4TCF7g/Scb53a779989e4a81acf184ac20d6849es-jpg-640x640.webp",
     price: "3400",
   },
   {
     image:
-      "https://i.ibb.co/N9WPyCq/S8cbb28753c1745edb179b3abf3ca1b14-W-png-640x640.webp",
+      "https://i.ibb.co/x6D9vM6/S9e3f6ee2f1544920bc2f1cc691501c39o.webp",
     price: "3400",
-  },
-  {
-    image:
-      "https://i.ibb.co/8b8hqj8/Ad9d8604794234179bcde494a86fc41dcp-jpeg-640x640.webp",
-    price: "3400",
-  },
+  }
 ];
 
 export const women_shoes = [
   {
     image:
-      "https://i.ibb.co/8NxYsxR/Sb0ff958acce846e1a9b00dc7d6b8efa1-H.webp",
+      "https://i.ibb.co/DK6cqQR/Sec8d6456bb404cbdaf99f705ff0a28a5-L-jpg-640x640.webp",
     price: "3400",
   },
   {
     image:
-      "https://i.ibb.co/RD8vv2y/Sdc43dffcea8144238c11dd775c3130b11.webp",
+      "https://i.ibb.co/1mmrXYG/Sccb36f150553479a9b7d3c5e023da24dj.webp",
     price: "3400",
   },
   {
     image:
-      "https://i.ibb.co/Bckz7sv/S6d600699d6174bcdb9b2bd6bfb98511cj.webp",
+      "https://i.ibb.co/jW9H6kM/S05f36d33e27547978820edb52f1a8b79b-jpg-640x640.webp",
     price: "3400",
   },
   {
     image:
-      "https://i.ibb.co/k3F33ss/Sea219ce2d4124684a80c3a56bb0b399dh-jpg-640x640.webp",
+      "https://i.ibb.co/v4tPXT0/Sfc39dda9e8ed4cac92c31f2b206276e1-C-jpg-640x640.webp",
     price: "3400",
   },
   {
     image:
-      "https://i.ibb.co/MfXn8NG/S771583054af442438f5b206ca749dbf4-E.webp",
+      "https://i.ibb.co/fN2dqZv/S4cc2575a1e5a4fab884725d3cc2e1d22-Q-jpg-640x640.webp",
     price: "3400",
   },
   {
     image:
-      "https://i.ibb.co/N9WPyCq/S8cbb28753c1745edb179b3abf3ca1b14-W-png-640x640.webp",
+      "https://i.ibb.co/m5ggFYB/S090e53f46447479e94e831338b088a6f0-jpg-640x640.webp",
     price: "3400",
-  },
-  {
-    image:
-      "https://i.ibb.co/8b8hqj8/Ad9d8604794234179bcde494a86fc41dcp-jpeg-640x640.webp",
-    price: "3400",
-  },
+  }
 ];
 
 export const women_accessories = [
   {
     image:
-      "https://i.ibb.co/8NxYsxR/Sb0ff958acce846e1a9b00dc7d6b8efa1-H.webp",
+      "https://i.ibb.co/VvR1bZr/Sa8a3b3569acc4468a1336ec3204dfe97l-jpg-640x640.webp",
     price: "3400",
   },
   {
     image:
-      "https://i.ibb.co/RD8vv2y/Sdc43dffcea8144238c11dd775c3130b11.webp",
+      "https://i.ibb.co/nP4TMsk/S9e329c87bd404a3a92eb6722bbf01c33i.webp",
     price: "3400",
   },
   {
     image:
-      "https://i.ibb.co/Bckz7sv/S6d600699d6174bcdb9b2bd6bfb98511cj.webp",
+      "https://i.ibb.co/7kPYGwh/Sb744d3e0641e4eff8614e069bac960d7y-jpg-640x640.webp",
     price: "3400",
   },
   {
     image:
-      "https://i.ibb.co/k3F33ss/Sea219ce2d4124684a80c3a56bb0b399dh-jpg-640x640.webp",
+      "https://i.ibb.co/XFN4pnW/Sa4487fd66a094874aa4477a51cc10612-S-jpg-640x640.webp",
     price: "3400",
   },
   {
     image:
-      "https://i.ibb.co/MfXn8NG/S771583054af442438f5b206ca749dbf4-E.webp",
+      "https://i.ibb.co/f4zZyrz/Sdf1a85b0f58949afa63b97f38dbd86ee-D-jpg-640x640.webp",
     price: "3400",
   },
   {
     image:
-      "https://i.ibb.co/N9WPyCq/S8cbb28753c1745edb179b3abf3ca1b14-W-png-640x640.webp",
+      "https://i.ibb.co/jTP1smY/S0371400772114c0f92f216d594afb061g.webp",
     price: "3400",
-  },
-  {
-    image:
-      "https://i.ibb.co/8b8hqj8/Ad9d8604794234179bcde494a86fc41dcp-jpeg-640x640.webp",
-    price: "3400",
-  },
+  }
 ];
