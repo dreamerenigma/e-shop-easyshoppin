@@ -4,7 +4,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { HiOutlineClipboardList } from "react-icons/hi";
 import { AiOutlineMessage } from "react-icons/ai";
 import { BsHeart } from "react-icons/bs";
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
