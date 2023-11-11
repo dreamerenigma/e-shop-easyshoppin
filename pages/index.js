@@ -1,18 +1,29 @@
-import Image from "next/image";
 import styles from "../styles/home.module.scss";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import axios from "axios";
 import { useSession, signIn, signOut } from "next-auth/react";
 import { Suspense } from "react";
-import "../i18n";
 import Main from "../components/home/main";
 import FlashDeals from "../components/home/flashDeals";
 import Category from "../components/home/category";
-import { women_accessories, women_dresses, women_shoes } from "../data/home";
+import "../i18n";
+import db from '../utils/db';
+import { 
+  gamingSwiper, 
+  homeImprovSwiper, 
+  women_accessories, 
+  women_dresses, 
+  women_shoes, 
+  women_swiper 
+} from "../data/home";
 import { useMediaQuery } from "react-responsive";
+import ProductsSwiper from "../components/productsSwiper";
+import Product from "../models/Product";
+import ProductCard from "../components/productCard";
 
-export default function Home({ country }) {
+export default function Home({ country, products }) {
+  console.log("products", products);
   const { data: session } = useSession();
   const isMedium = useMediaQuery({ query: "(max-width: 850px" });
   const isMobile = useMediaQuery({ query: "(max-width: 550px" });
@@ -50,6 +61,12 @@ export default function Home({ country }) {
               background="#000" 
             />
             </div>
+            <ProductsSwiper products={women_swiper} />
+            <div className={styles.products}>
+              {products.map((product) => (
+                <ProductCard product={product} key={product._id} />
+              ))}
+            </div>
           </div>
         </div>
         <Footer country={country} />
@@ -58,6 +75,8 @@ export default function Home({ country }) {
   );
 }
 export async function getServerSideProps() {
+  db.connectDb();
+  let products = await Product.find().sort({ createdAt: -1 }).lean();
   let data = await axios
     .get("https://api.ipregistry.co/?key=zo9pqtyf5a0drhl6")
     .then((res) => {
@@ -68,6 +87,7 @@ export async function getServerSideProps() {
     });
   return {
     props: {
+      products: JSON.parse(JSON.stringify(products)), 
       // country: { name: data.name, flag: data.flag.emojitwo },
       country: {
         name: "Russian Federation",

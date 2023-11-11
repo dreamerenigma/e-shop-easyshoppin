@@ -2,6 +2,7 @@ $blue-color:#2f82ff;
 $yellow-color: #fac80f;
 $orange-color: #ef670f;
 $violet-color: #5a31f4;
+$green-color: #3c811f;
 $redish-color: #f15f6f;
 $grey-color:#f8f8f8;
 $light-error-color: #fd010169;
@@ -229,6 +230,22 @@ $shadow-2:rgba(99, 99, 99, 0.1) 0px 0px 4px 0px;
     .swiper-button-next,
     .swiper-button-prev {
       display: grid !important;
+    }
+  }
+}
+.products__swiper {
+  .swiper-button-next,
+  .swiper-button-prev {
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #666;
+    box-shadow: $shadow-1;
+    &::after {
+      transform: scale(0.5);
     }
   }
 }
