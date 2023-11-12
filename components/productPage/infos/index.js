@@ -65,6 +65,7 @@ export default function Infos({ product, setActiveImg }) {
           <div className={styles.infos__sizes_wrap}>
             {product.sizes.map((size, i) => (
               <Link
+                key={i}
                 href={`/product/${product.slug}?style=${router.query.style}&size=${i}`}
               >
                 <div className={`${styles.infos__sizes_size} ${
@@ -82,6 +83,7 @@ export default function Infos({ product, setActiveImg }) {
           {product.colors && 
             product.colors.map((color, i) => (
               <span
+                key={i}
                 className={i == router.query.style ? styles.active_color : ""}
                 onMouseOver={() => 
                   setActiveImg(product.subProducts[i].images[0].url)

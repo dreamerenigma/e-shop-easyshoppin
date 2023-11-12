@@ -4,15 +4,16 @@ import Product from "../../models/Product";
 import Category from "../../models/Category";
 import SubCategory from "../../models/SubCategory";
 import Header from "../../components/header";
-import Footer from "../../components/footer";
 import MainSwiper from "../../components/productPage/mainSwiper";
 import { useState } from "react";
 import Infos from "../../components/productPage/infos";
 import Head from "next/head";
 import Reviews from "../../components/productPage/reviews";
+import User from "../../models/User";
 
 export default function product({ product }) {
   const [activeImg, setActiveImg] = useState("");
+  console.log("reviews", product.reviews);
   return (
     <>
       <Head>
@@ -24,7 +25,7 @@ export default function product({ product }) {
           <div className={styles.path}>
             Home / {product.category.name}
           {product.subCategories.map((sub) => (
-            <span>{sub.name}</span>
+            <span>/{sub.name}</span>
           )) }
           </div>
           <div className={styles.product__main}>
@@ -48,6 +49,7 @@ export async function getServerSideProps(context) {
   let product = await Product.findOne({ slug })
     .populate({ path: "category", model: Category })
     .populate({ path: "subCategories._id", model: SubCategory })
+    .populate({ path: "reviews.reviewBy", model: User })
     .lean();
   let subProduct = product.subProducts[style];
   let prices = subProduct.sizes
@@ -99,6 +101,18 @@ export async function getServerSideProps(context) {
         percentage: "0",
       },
     ],
+    allSizes: product.subProducts
+      .map((p) => {
+        return p.sizes;
+      })
+      .flat()
+      .sort((a, b) => {
+        return a.size - b.size;
+      })
+      .filter(
+        (element, index, array) => 
+          array.findIndex((el2) => el2.size === element.size) === index
+      ),
   };
   /*-------------------*/
   db.disconnectDb();
